@@ -1,0 +1,256 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgba(0, 89, 255, 0.479);
+}
+
+.logo {
+    width: 20%;
+    font-size: 3rem;
+}
+
+.shop_text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#searchForm {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_item {
+    width: 80%;
+    height: 1.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 2px 5px;
+}
+
+.sub_btn {
+    width: 10%;
+    height: 1.8rem;
+    font-size: 1rem;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    border: none;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.sub_btn:hover {
+    cursor: pointer;
+}
+
+.cart_wish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.cart_wish div {
+    text-align: center;
+}
+
+.cart_wish a {
+    color: black;
+}
+
+.items {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.productBox {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    height: 28rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    gap: 1rem;
+    background-color: aliceblue;
+}
+
+.productBox:hover {
+    background-color: white;
+}
+
+.productBox p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    /* padding: 1rem; */
+}
+
+.person_count {
+    display: flex;
+    align-items: center;
+}
+
+.all_items {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: left;
+    align-items: center;
+    width: 75%;
+    /* border: 2px solid black; */
+    gap: 2rem;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+}
+
+.itemImg {
+    width: 55%;
+    height: 8rem;
+}
+
+.cart_items {
+    width: 25%;
+    background-color: rgba(255, 0, 0, 0.1);
+    box-shadow: 5px 10px 20px gray;
+    height: 20rem;
+    position: fixed;
+    right: 0;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem;
+    justify-content: left;
+    /* align-items: center; */
+}
+
+.cart_items hr {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .product {
+        width: 100%;
+    }
+} */
+
+.buy_btn {
+    width: 40%;
+    height: 2.5rem;
+    font-size: 1rem;
+    /* font-weight: 600; */
+    color: antiquewhite;
+    background-color: rgba(29, 66, 230, 0.841);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.buy_btn:hover {
+    cursor: pointer;
+    background-color: rgb(53, 78, 158);
+    box-shadow: 1px 4px 8px rgb(45 44 44) inset;
+}
+
+.btn_buy {
+    width: 100%;
+    text-align: center;
+}
+
+.btns_div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.addToCart {
+    width: 70%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(20, 19, 19);
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    color: antiquewhite;
+}
+
+.details_btn {
+    width: 40%;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgba(29, 66, 230, 0.841);
+    color: antiquewhite;
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    /* text-decoration: none; */
+}
+
+.addToCart:hover {
+    background-color: aliceblue;
+    border: 1px solid rgb(25, 24, 24);
+    color: rgb(25, 24, 24);
+    cursor: pointer;
+}
+
+.details_btn:hover {
+    background-color: aliceblue;
+    border: 1px solid rgb(25, 24, 24);
+    color: rgb(25, 24, 24);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+    .all_items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cart_items {
+        display: none;
+    }
+    .productBox {
+        width: 100%;
+        height: 30rem;
+    }
+    .itemImg {
+        width: 45%;
+        height: 12rem;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1025px) {
+    .productBox {
+        width: 45%;
+    }
+}

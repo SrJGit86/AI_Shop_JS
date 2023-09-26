@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shop</title>
+    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <span><strong>AI</strong></span>
+                <span class="shop_text">Shop.</span>
+            </div>
+            <form action="" id="searchForm">
+                <input type="text" class="search_item" placeholder="Search here...">
+                <input type="submit" value="search" class="sub_btn">
+            </form>
+            <div class="cart_wish">
+                <div class="wish">
+                    <a href=""><i class="fa fa-heart" aria-hidden="true"></i></a>
+                    <p>Your wishlist</p>
+                </div>
+                <div class="cart">
+                    <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <p>Your card</p>
+                </div>
+            </div>
+        </nav>
+        <div class="items">
+            <div class="all_items"></div>
+            <div class="cart_items">
+                <h2>My Cart</h2>
+                <hr>
+                <p>Total Added-Products: <span id="addedCart">0</span></p>
+                <hr>
+                <p>Price: <strong>$</strong><span id="price">0</span></p>
+                <hr>
+                <p>Delivery-Charge: <strong>$</strong><span id="deliverCharge">20</span></p>
+                <hr>
+                <p>Total-Tax: <strong>$</strong><span id="totTax">0</span></p>
+                <hr>
+                <p>Total: <strong>$</strong><span id="totalAmmount">0</span></p>
+                <div class="btn_buy">
+                    <button class="buy_btn">Buy Now</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./shop.js"></script>
+</body>
+
+</html>
