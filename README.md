@@ -2,6 +2,10 @@
 
 AI Shop is a simple e-commerce web application that allows users to browse and shop for products. It provides features like searching for products, adding them to the cart, calculating the total price, taxes, and more.
 
+## Demo
+
+Test the button in action here: [Live Demo](https://srjgit86.github.io/AI_Shop_JS/shop.html)
+
 ## Features
 
 - **Product Listings:** Browse a variety of products with images, titles, categories, ratings, and prices.
